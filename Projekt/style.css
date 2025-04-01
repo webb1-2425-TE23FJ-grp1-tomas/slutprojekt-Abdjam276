@@ -1,0 +1,33 @@
+*{
+box-sizing: border-box;
+
+}
+
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: 
+"b b b"
+"c s b"
+"c b s";
+}
+
+.meny{
+grid-area: s;
+
+
+
+}
+
+.services{
+grid-area: c;
+
+
+}
+
+.pictures{
+
+grid-area: b;
+
+}
