@@ -4,30 +4,53 @@ box-sizing: border-box;
 }
 
 .container{
+width: 1200px;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 100px 600px 300px 400px;
 grid-template-areas: 
-"b b b"
-"c s b"
-"c b s";
-}
-
-.meny{
-grid-area: s;
-
-
+" ";
 
 }
-
-.services{
-grid-area: c;
+.container div{
+margin: 10px;
+border-radius: 15px;
 
 
 }
 
-.pictures{
 
-grid-area: b;
+
+#header{
+background-color:grey;
+
+display: grid;
+grid-template-columns: 100px 200px 1fr min-content;
+grid-area: a;
+}
+
+
+#header ul{
+
+
+}
+
+#header a {
+
+}
+
+#menu{
+
+}
+
+#services{
+
+}
+
+#information{
+
+}
+
+#yapping1{
 
 }
