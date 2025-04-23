@@ -1,111 +1,137 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: rgb(172, 167, 167);
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("img/blackops.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  #container {
-    width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 600px 300px 400px;
-    gap: 20px;
-  }
-  
-  div {
-    border-radius: 15px;
-    padding: 10px;
-  }
-  
-  #header {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: 100px 200px 1fr min-content;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-  }
-  
-  #header img {
-    width: 100%;
-  }
-  
-  #header ul {
-    grid-column: 4/5;
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  #header a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  #main {
-    background-image: url("img/happiest-dog.webp");
-    background-size: cover;
-    background-position-y: bottom;
-    grid-column: 1/5;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 30px;
-  }
-  
-  #main h1 {
-    font-size: 50px;
-    color: white;
-  }
-  
-  #main h4 {
-    font-size: 20px;
-    color: white;
-  }
-  
-  #Story {
-    background-color: white;
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  #Story img {
-    border-radius: 15px;
-    width: 100%;
-  }
-  
-  #partners {
-    background-color: white;
-    grid-column: 4/5;
-    grid-row: 3/5;
-  }
-  
-  #partners img {
-    display: flex;
-    margin: auto;
-    height: 70px;
-  }
-  
-  .card {
-    background-color: white;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(4, 4, 4);
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("img/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+#container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 600px 300px 400px;
+  gap: 20px;
+}
+
+div {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+#header {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("img/banner.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  color: white;
+}
+
+#header img {
+  width: 100px;
+}
+
+/* NAVIGATION MENU START */
+#header .nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#header .nav ul li {
+  margin: 0 10px;
+}
+
+#header .nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #c2341b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+#header .nav ul li a:hover {
+  background-color: white;
+  color: #d34e11;
+  border: 2px solid #c74612; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#main {
+  background-image: url("img/happiest-dog.webp");
+  background-size: cover;
+  background-position-y: bottom;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px;
+}
+
+#main h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#main h4 {
+  font-size: 20px;
+  color: white;
+}
+
+#Story {
+  background-color: white;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#Story img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+
+#partners {
+  background-color: white;
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+#partners img {
+  display: flex;
+  margin: auto;
+  height: 70px;
+}
+
+
+.card {
+  background-color: white;
+}
   #BO1 img {
     border-radius: 10px;
     width: 100%;
@@ -125,37 +151,4 @@
     gap: 5px;
   }
   
-  .nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
-}
-
-.nav ul li {
-    margin: 0 5px;
-}
-
-.nav ul li a {
-    display: block;
-    padding: 5px 10px;
-    background-color: #c2341b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.nav ul li a:hover {
-    background-color: white;
-    color: #d34e11;
-    border: 2px solid #c74612; 
-    width: auto; 
-    padding: 5px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+  
