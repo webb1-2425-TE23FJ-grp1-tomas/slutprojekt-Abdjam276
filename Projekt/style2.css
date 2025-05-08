@@ -83,7 +83,7 @@ div {
 }
 
 #main {
-  background-image: url("img/happiest-dog.webp");
+  
   background-size: cover;
   background-position-y: bottom;
   grid-column: 1/5;
@@ -149,6 +149,6 @@ div {
     border-radius: 10px;
     width: 50%;
     gap: 5px;
+    
   }
-  
-  
+ 

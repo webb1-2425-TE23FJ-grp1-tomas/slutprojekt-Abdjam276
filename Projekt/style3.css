@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(172, 167, 167);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  #container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 600px 300px 400px;
+    gap: 20px;
+  }
+  
+  div {
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  
+  #header {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("img/banner.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: white;
+  }
+  
+  #header img {
+    width: 100px;
+  }
+  
+ 
+  #header .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  #header .nav ul li {
+    margin: 0 10px;
+  }
+  
+  #header .nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #131110;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  #header .nav ul li a:hover {
+    background-color: white;
+    color: #060706;
+    border: 2px solid #111010; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  
+
+  #main {
+    
+    background-size: cover;
+    background-position-y: bottom;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+  }
+  
+  #main h1 {
+    font-size: 50px;
+    color: white;
+  }
+  
+  #main h4 {
+    font-size: 20px;
+    color: white;
+  }
+  
+ 
+ 
+  
+
+  #partners {
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  
+  #partners img {
+    display: flex;
+    margin: auto;
+    height: 70px;
+  }
+  
+ 
+  .card {
+    background-color: white;
+  }
+  
+  #BO1 img,
+  #BO2 img,
+  #BO3 img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
