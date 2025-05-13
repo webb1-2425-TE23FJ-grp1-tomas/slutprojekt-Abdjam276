@@ -18,11 +18,14 @@ body {
 
 
 #container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 600px 300px 400px;
   gap: 20px;
+  padding: 20px;
 }
 
 div {
@@ -103,16 +106,18 @@ div {
   color: white;
 }
 
-#Story {
+#Prestige {
   background-color: white;
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-#Story img {
+#Prestige img {
   border-radius: 15px;
   width: 100%;
+  height: auto;
 }
 
 
@@ -123,32 +128,70 @@ div {
 }
 
 #partners img {
-  display: flex;
-  margin: auto;
+  display: block;
+  margin: 10px auto;
   height: 70px;
 }
 
 
 .card {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-  #BO1 img {
-    border-radius: 10px;
-    width: 50%;
-    gap: 5px;
-    
+
+.card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
   }
-  
-  #BO2 img {
-    border-radius: 10px;
-    width: 50%;
-    gap: 5px;
+
+  #header {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  #BO3 img {
-    border-radius: 10px;
-    width: 50%;
-    gap: 5px;
-    
+
+  #header .nav ul {
+    flex-direction: column;
+    align-items: center;
   }
- 
+
+  #Prestige {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #partners {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #main h1 {
+    font-size: 32px;
+  }
+
+  #main h4 {
+    font-size: 16px;
+  }
+
+  #header img {
+    width: 80px;
+  }
+}
