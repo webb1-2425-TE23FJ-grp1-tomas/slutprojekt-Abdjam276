@@ -118,8 +118,12 @@ div {
   border-radius: 15px;
   width: 100%;
   height: auto;
+  transition: transform 0.6s ease;
 }
 
+#Prestige img:hover {
+  transform: scale(1.1);
+}
 
 #partners {
   background-color: white;
@@ -131,8 +135,13 @@ div {
   display: block;
   margin: 10px auto;
   height: 70px;
+  transition: transform 0.6s ease;
 }
 
+#partners img:hover{
+transform: scale(1.1);
+
+}
 
 .card {
   background-color: white;
@@ -147,8 +156,13 @@ div {
   max-width: 400px;
   border-radius: 10px;
   height: auto;
+  transition: transform 0.6s ease;
 }
 
+.card img:hover{
+transform: scale(1.1);
+
+}
 
 @media (max-width: 768px) {
   #container {

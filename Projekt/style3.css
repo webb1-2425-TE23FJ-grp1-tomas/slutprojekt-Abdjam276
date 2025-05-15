@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background: rgb(172, 167, 167);
     display: flex;
     justify-content: center;
@@ -14,25 +14,25 @@
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-  }
-  
+}
 
-  #container {
-    width: 1200px;
+#container {
+    width: 100%;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 600px 300px 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 600px 300px 400px;
     gap: 20px;
-  }
-  
-  div {
+    padding: 20px;
+}
+
+div {
     border-radius: 15px;
     padding: 10px;
-  }
-  
-  
-  #header {
-    grid-column: 1/5;
+}
+
+#header {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,14 +41,13 @@
     background-position: center;
     padding: 30px;
     color: white;
-  }
-  
-  #header img {
+}
+
+#header img {
     width: 200px;
-  }
-  
- 
-  #header .nav ul {
+}
+
+#header .nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -56,13 +55,13 @@
     flex-direction: row; 
     justify-content: flex-start;
     gap: 10px;
-  }
-  
-  #header .nav ul li {
+}
+
+#header .nav ul li {
     margin: 0 10px;
-  }
-  
-  #header .nav ul li a {
+}
+
+#header .nav ul li a {
     display: block;
     padding: 10px 20px;
     background-color: #131110;
@@ -73,65 +72,110 @@
     text-align: center;
     transition: all 0.3s ease;
     font-size: 14px;
-  }
-  
-  #header .nav ul li a:hover {
+}
+
+#header .nav ul li a:hover {
     background-color: white;
     color: #060706;
     border: 2px solid #111010; 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-  }
+}
 
-  
-
-  #main {
-    
+#main {
     background-size: cover;
     background-position-y: bottom;
-    grid-column: 1/5;
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding: 30px;
-  }
-  
-  #main h1 {
+}
+
+#main h1 {
     font-size: 50px;
     color: white;
-  }
-  
-  #main h4 {
+}
+
+#main h4 {
     font-size: 20px;
     color: white;
-  }
-  
- 
- 
-  
+}
 
-  #partners {
+#partners {
     background-color: white;
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-  
-  #partners img {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+#partners img {
     display: flex;
     margin: auto;
     height: 70px;
-  }
-  
- 
-  .card {
+    transition: transform 0.6s ease;
+}
+
+#partners img:hover {
+    transform: scale(1.1);
+}
+
+.card {
     background-color: white;
-  }
-  
-  #BO1 img,
-  #BO2 img,
-  #BO3 img {
+}
+
+
+#BO7 img,
+#MW4 img,
+#AW2 img {
     border-radius: 10px;
     width: 100%;
-    height: 200px;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
-  }
+    transition: transform 0.6s ease; 
+}
+
+#BO7 img:hover,
+#MW4 img:hover,
+#AW2 img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 600px 300px 400px;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header img {
+        width: 150px;
+    }
+
+    #header .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    #main h1 {
+        font-size: 40px;
+    }
+
+    #main h4 {
+        font-size: 18px;
+    }
+
+    #partners {
+        grid-column: 1 / -1;
+        margin-top: 20px;
+    }
+
+    .card {
+        grid-column: 1 / -1;
+    }
+}

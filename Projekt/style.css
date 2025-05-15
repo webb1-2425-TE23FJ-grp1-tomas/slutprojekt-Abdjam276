@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    background-image: url(banner.webp);
+    
     color: white;
     padding: 30px;
     text-align: center;
@@ -19,7 +19,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+.header img{
+width: 200px;
+height:auto;
 
+}
 
 .header h1 {
     margin: 0 0 0 10px; 
@@ -85,18 +89,20 @@ body {
     display: none;
 }
 
-.cookies{
-    font-size: 100px;
+.cookies {
+    font-size: 50px;
     position: fixed;
     top: 10px;
     bottom: 10px;
     right: 10px;
     left: 10px;
     background-color: white;
-    border:solid black;
+    border: solid black;
+    transform: scale(0.5);
+    transform-origin: center
 }
 
-.btn{
+.btn {
     cursor: pointer;
     border: solid thin black;
     margin: 10px;
@@ -112,7 +118,7 @@ body {
     bottom: 20px;
 }
 
-.btn:hover{
+.btn:hover {
     text-align: center;
     width: 500px;
     height: 115px;
@@ -139,6 +145,6 @@ body {
     gap: 10px; 
 }
 
-.title{
+.title {
     margin: 0;
 }
