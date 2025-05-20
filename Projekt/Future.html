@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
-<html lang="en"> 
-<head> 
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future</title>
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="simple-lightbox.min.css">
 </head>
 <body>
 
 <div id="container">
     <div id="header">
-        <img src="img/Activision-Logo.webp" alt="Logo">
+        <img src="img/Activision-Logo.webp" alt="Activision Logo">
         <h2>Future</h2>
         <nav class="nav">
             <ul>
@@ -20,10 +22,9 @@
             </ul>
         </nav>
     </div>
-    
-    
+
     <div id="partners">
-        <div> 
+        <div>
             <h2>Lead developers</h2>
             <p>We partner with many influential studios to bring you the best gaming experience possible.</p>
             <img src="img/Activision-Logo.webp" alt="Activision">
@@ -33,10 +34,11 @@
             <img src="img/Raven-software-logo.webp" alt="RavenSoftware">
         </div>
     </div>
-    
-    
+
     <div id="BO7" class="card">
-        <img src="img/Black-ops-7.webp" alt="BO7">
+        <a href="img/Black-ops-7.webp" title="Call of Duty: Black Ops 7 - Framtida Spekulationer">
+            <img src="img/Black-ops-7.webp" alt="">
+        </a>
         <div>
             <h2>Black Ops 7</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -44,8 +46,10 @@
         </div>
     </div>
 
-    <div id="MW4" class="card"> 
-        <img src="img/modern-warfare-4.webp" alt="MW4">
+    <div id="MW4" class="card">
+        <a href="img/modern-warfare-4.webp" title="Call of Duty: Modern Warfare 4 - Nästa generation">
+            <img src="img/modern-warfare-4.webp" alt="">
+        </a>
         <div>
             <h2>Modern Warfare 4</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -54,7 +58,9 @@
     </div>
 
     <div id="AW2" class="card">
-        <img src="img/AW-logo.webp" alt="AW2">
+        <a href="img/AW-logo.webp" title="Call of Duty: Advanced Warfare 2 - Exosuits återvänder?">
+            <img src="img/AW-logo.webp" alt="">
+        </a>
         <div>
             <h2>Advanced Warfare</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -63,6 +69,14 @@
     </div>
 
 </div>
+
+<script src="simple-lightbox.min.js"></script>
+<script>
+   
+    let lightbox = new SimpleLightbox('#container a', {
+     
+    });
+</script>
 
 </body>
 </html>

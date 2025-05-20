@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head> 
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legacy</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="simple-lightbox.min.css">
+    <link rel="shortcut icon" href="img/bo2.webp" type="image/x-icon">
 </head>
 <body>
 
 <div id="container">
     <div id="header">
-        <img src="img/Treyarch-logo.webp" alt="Logo">
+        <img src="img/Treyarch-logo.webp" alt="Treyarch Logo">
         <h2>Legacy</h2>
         <nav class="nav">
             <ul>
@@ -25,34 +27,38 @@
         <h4>All time</h4>
     </div>
     <div id="Prestige">
-        <img src="img/BO1-prestige-1.webp" alt="Prestige">
+        <img src="img/BO1-prestige-1.webp" alt="Prestige Icon">
         <div>
             <h2>Levels</h2>
             <p>XP from matches/zombies is essential for Leveling up and reaching Prestiges</p>
-            <a href="">more</a>
+            <a href="#">more</a>
         </div>
     </div>
     <div id="partners">
-        <div> 
+        <div>
             <h2>Lead developers</h2>
             <p>We partner with many influential studios to bring you the best gaming experience possible.</p>
-            <img src="img/Activision-Logo.webp" alt="Activision">
-            <img src="img/Treyarch-logo.webp" alt="Treyarch">
-            <img src="img/Infinity-Ward-Logo.webp"alt="InfinityWard">
-            <img src="img/Sledgehammer-Games-logo.webp" alt="Sledgehammer">
-            <img src="img/Raven-software-logo.webp" alt="RavenSoftware">
+            <img src="img/Activision-Logo.webp" alt="Activision Logo">
+            <img src="img/Treyarch-logo.webp" alt="Treyarch Logo">
+            <img src="img/Infinity-Ward-Logo.webp" alt="Infinity Ward Logo">
+            <img src="img/Sledgehammer-Games-logo.webp" alt="Sledgehammer Games Logo">
+            <img src="img/Raven-software-logo.webp" alt="Raven Software Logo">
         </div>
     </div>
     <div id="BO1" class="card">
-        <img src="img/bo1new.webp" alt="BO1">
+        <a href="img/bo1new.webp" title="">
+            <img src="img/bo1new.webp" alt="">
+        </a>
         <div>
             <h2>Black Ops 1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <a href="">More</a>
         </div>
     </div>
-    <div id="BO2" class="card"> 
-        <img src="img/bo2.webp"alt="BO2">
+    <div id="BO2" class="card">
+        <a href="img/bo2.webp" title="">
+            <img src="img/bo2.webp" alt="">
+        </a>
         <div>
             <h2>Black Ops 2</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -60,7 +66,9 @@
         </div>
     </div>
     <div id="BO3" class="card">
-        <img src="img/bo3.webp" alt="BO3">
+        <a href="img/bo3.webp" title="">
+            <img src="img/bo3.webp" alt="">
+        </a>
         <div>
             <h2>Black Ops 3</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -69,6 +77,14 @@
     </div>
 
 </div>
+
+<script src="simple-lightbox.min.js"></script>
+<script>
+    
+    let lightbox = new SimpleLightbox('#container a', {
+       
+    });
+</script>
 
 </body>
 </html>
